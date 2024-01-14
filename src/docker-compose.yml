@@ -3,7 +3,23 @@ version: '3'
 services:
 
   tor:
+    container_name: tor
     build: tor/
+    networks:
+      - tor_networks
     expose:
      - "9050"
-     - "80"
+
+  nginx:
+    container_name: nginx
+    build: nginx/
+    depends_on:
+      - tor
+    networks:
+      - tor_networks
+    expose:
+      - "80"
+
+networks:
+  tor_networks:
+    driver: bridge 
