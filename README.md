@@ -4,6 +4,9 @@ This project demonstrates setting up a hidden service using Tor and Nginx inside
 
 I use nyx which is a command line monitor for Tor. To display the .onion URL at the end of the tor bootstrap.
 
+Links for nyx: - https://nyx.torproject.org/
+               - http://3ewfgrt4gzfccp6bnquhqb266r3zepiqpnsk3falwygkegtluwuyevid.onion
+
 ## Prerequisites
 
 - Docker
