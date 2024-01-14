@@ -2,6 +2,8 @@
 
 This project demonstrates setting up a hidden service using Tor and Nginx inside a Docker container. The hidden service provides anonymous and secure access to a web application.
 
+I use nyx which is a command line monitor for Tor. To display the .onion URL at the end of the tor bootstrap.
+
 ## Prerequisites
 
 - Docker
@@ -36,6 +38,4 @@ This project demonstrates setting up a hidden service using Tor and Nginx inside
 
 I plan to make the following updates in future versions:
 
-- Display the onion address once the service is launched.
-- Add an ssh connection on the server.
-- Separate the docker into 2 dockers, one for nginx and the other for tor.
+- Add an ssh connection on the server for use nyx.
